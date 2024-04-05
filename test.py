@@ -1,4 +1,4 @@
 # To include the logger compnent
 from src.mcqgenerator.logger import logging
 
-logging.info("Hola, estoy iniciando la ejecucion del proceso ...")
+logging.info("Hola, ahora estoy ejecutando un nuevo ambiente  ...")
