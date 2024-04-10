@@ -3,7 +3,7 @@
 import os
 import PyPDF2
 import json
-import traceback
+import traceback # type: ignore
 
 def read_file(file):
     if file.name.endswith(".pdf"):
@@ -36,7 +36,7 @@ def get_table_data(quiz_str):
             mcq=value["mcq"]
             options=" || ".join(
                 [
-                    f"{option}-> {option-value}" for option, option_value in value["options"].items()
+                    f"{option}-> {option_value}" for option, option_value in value["options"].items()
                 ]
             )     
             correct=value["correct"]

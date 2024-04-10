@@ -1,7 +1,7 @@
 # Import basic packages 
 import os
 import json
-import traceback
+import traceback # type: ignore
 import pandas as pd
 from dotenv import load_dotenv
 from src.mcqgenerator.utils import read_file, get_table_data
@@ -12,11 +12,11 @@ from src.mcqgenerator.logger import logging
 
 # Next step is to creatr te SteamlitAPP, so first we will load the json file
 
-with open('C:\Users\Fernando Navarro\MCQProject\response.json', 'r') as file:
+with open(r'C:\Users\Fernando Navarro\MCQProject\response.json', 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 # Create the title
-st.title("MCQ Creator application with LangCgain")
+st.title("MCQ Creator application with LangChain")
 
 
 # Create a form usin st.form 
@@ -61,13 +61,13 @@ with st.form("user_inputs"):
                 print(f"Completion Tokens: {cb.completion_tokens}")
                 print(f"Total Cost: {cb.total_cost}")
                 if isinstance(response, dict):
-                    # Extract qye quiz data from the response
+                    # Extract the quiz data from the response
                     quiz=response.get("quiz", None)
                     if quiz is not None:
                         table_data=get_table_data(quiz)
                         if table_data is not None:
                             df=pd.DataFrame(table_data)
-                            df.index(df.index +1)
+                            df.index=df.index +1
                             st.table(df)
                             # Display the review in text box as well
                             st.text_area(label="Review", value=response["review"])
