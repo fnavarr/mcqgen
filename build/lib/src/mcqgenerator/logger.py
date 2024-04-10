@@ -1,7 +1,7 @@
 # Will create a log of all
 import logging
 import os
-from datetime import datetime
+from datetime import datetime # type: ignore
 
 # Creates the name of the logfile with the date and time of the log
 LOG_FILE = f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
