@@ -12,7 +12,7 @@ from src.mcqgenerator.logger import logging
 
 # Next step is to creatr te SteamlitAPP, so first we will load the json file
 
-with open(r'C:\Users\Fernando Navarro\MCQProject\response.json', 'r') as file:
+with open(r'response.json', 'r') as file:
     RESPONSE_JSON = json.load(file)
 
 # Create the title
