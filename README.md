@@ -1,6 +1,6 @@
 CREATE AND PYTHON VIRTUAL ENVIRONMENT AND PROJECT STRUCTURE
 
-1.	First step is to create the folder project using Power Sell or Git Bass command windows:  mkdir folder
+1.	First step is to create the folder project using Power Shell or Git Bash command windows:  mkdir folder
 2.	Go to the created folder:  cd folder 
 3.	Invoke VS Code:   code .
 4.	In VS Code open the terminal, recommended use Git Bash as terminal.
