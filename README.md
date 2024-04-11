@@ -1,4 +1,4 @@
-CREATE AND PYTHON VIRTUAL ENVIRONMENT AND PROJECT STRUCTURE
+CREATE THE PYTHON VIRTUAL ENVIRONMENT AND PROJECT STRUCTURE
 
 1.	First step is to create the folder project using Power Shell or Git Bash command windows:  mkdir folder
 2.	Go to the created folder:  cd folder 
